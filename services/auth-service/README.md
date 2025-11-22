@@ -1,10 +1,10 @@
 #auth-service
+
 Stack: Java 21, Spring Boot 3.4.x, PostgreSQL, JWT
 
 Endpoints:
 Post /api/v1/auth/register
 Post /api/v1/auth/login
-
 
 Run:
 mvn package

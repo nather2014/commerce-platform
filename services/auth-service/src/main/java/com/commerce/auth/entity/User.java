@@ -25,12 +25,6 @@ public class User {
 	private String passwordHash;
 	
 	@Column
-	private Long id;
-	@Column
-	private String email;
-	@Column
-	private String passwordHash;
-	@column
 	private Set<String> roles;
 
 	private Instant createdAt = Instant.now();

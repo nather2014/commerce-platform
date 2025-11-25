@@ -7,6 +7,8 @@ import com.commerce.auth.entity.RefreshToken;
 import com.commerce.auth.entity.User;
 import com.commerce.auth.repository.RefreshTokenRepository;
 import com.commerce.auth.repository.UserRepository;
+import com.commerce.auth.util.PasswordUtils;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import java.time.Instant;

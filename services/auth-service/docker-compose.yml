@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16
+    container_name: commerce_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: an
+      POSTGRES_PASSWORD: yourpass
+      POSTGRES_DB: commerce
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
+
